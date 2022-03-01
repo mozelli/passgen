@@ -5,11 +5,17 @@
     margin: 2rem 0;
 
     .credits {
+        font-size: 1.4rem;
         text-align: center;
         color: var(--white);
 
         span {
             font-weight: 700;
+        }
+
+        .copy {
+            padding-top: 1rem;
+            font-size: 1rem;
         }
     }
 
