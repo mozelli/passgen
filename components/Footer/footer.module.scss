@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    background-color: var(--purple);
+    padding: 2rem;
+    margin: 2rem 0;
+
+    .credits {
+        text-align: center;
+        color: var(--white);
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+}
