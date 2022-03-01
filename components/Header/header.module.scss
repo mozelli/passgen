@@ -1,0 +1,18 @@
+.container {
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+
+    }
+
+    .brand {
+        padding: 2rem 2rem;
+        font-size: 2.5rem;
+        color: var(--white);
+        font-weight: 700;
+    }
+}
+

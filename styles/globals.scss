@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+  --purple: #8B71BD;
+  --green100: #DFF3E3;
+  --green300: #BEE5BF;
+  --apricor: #FFD1BA;
+  --blue: #48BEFF;
+  --dark: #070707;
+}
+
+body {
+  background-color: var(--green100);
+  color: var(--dark);
+}
+
+
+body, input, select, button, textarea {
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
