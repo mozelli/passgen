@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <SEO title='PassGen' description='Gerador de password online. Gerador de senha online.'  />
+      <SEO title='PassGen' description='Gerador de password online. Gerador de senha online.' image='key-image.png' />
       <div className={ styles.field }>
         <div className={ styles.label }>Tamanho:</div>
         <button type="button" onClick={ plus }>
