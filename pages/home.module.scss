@@ -1,6 +1,13 @@
 .container {
-    padding: 2rem 1rem;
+    padding: 1rem;
     color: var(--dark);
+
+    .smallText {
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        text-align: center;
+        color: var(--red);
+    }
 
     .content {
         display: flex;
@@ -17,6 +24,8 @@
             align-items: center;
 
             button {
+                display: flex;
+                align-items: center;
                 background-color: var(--white);
                 border: 0;
             }
