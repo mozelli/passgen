@@ -49,6 +49,7 @@ export default function Home() {
         <div className={ styles.password }>
           { password }
         </div>
+        { process.env.NEXT_PUBLIC_SITE_URL }
       </div>
       
     </div>
