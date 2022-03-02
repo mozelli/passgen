@@ -6,6 +6,8 @@ import styles from './home.module.scss'
 export default function Home() {
   const [size, setSize] = useState<any>(4);
   const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("Informe abaixo o número de caracteres da senha");
+  const [messageStyle, setMessageStyle] = useState(styles.smallText);
 
   useEffect(() => {
     setSize(size);
@@ -20,6 +22,9 @@ export default function Home() {
   },[size, setPassword]);
 
   function plus() {
+    setMessageStyle(styles.smallText);
+    setMessage("Informe abaixo o número de caracteres da senha");
+
     if(size <= 15) {
       const sizePlusOne = size + 1;
       setSize(sizePlusOne);
@@ -27,6 +32,9 @@ export default function Home() {
   }
 
   function minus() {
+    setMessageStyle(styles.smallText);
+    setMessage("Informe abaixo o número de caracteres da senha");
+
     if (size >= 5) {
       const sizeMinusOne = size - 1;
       setSize(sizeMinusOne);
@@ -35,7 +43,8 @@ export default function Home() {
 
   function copyToClipboard() {
     navigator.clipboard.writeText(password).then(() => {
-      alert(`Senha "${password}" copiada!`);
+      setMessage("Senha copiada!");
+      setMessageStyle(styles.smallTextSuccessMessage);
     });
   }
 
@@ -43,8 +52,8 @@ export default function Home() {
     <div className={ styles.container }>
       <SEO title='PassGen' description='Gerador de password online. Gerador de senha online.' image='key-image.png' />
       <div>
-        <div className={ styles.smallText }>
-          Informe abaixo o número de caracteres da senha
+        <div className={ messageStyle }>
+          { message }
         </div>
         <div className={ styles.content }>
           <div className={ styles.label }>

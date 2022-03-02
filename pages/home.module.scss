@@ -7,6 +7,20 @@
         font-size: 1.2rem;
         text-align: center;
         color: var(--red);
+        height: 100px;
+
+        transition: color 1.5s;
+    }
+
+    .smallTextSuccessMessage {
+        padding: 1rem 0;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        color:forestgreen;
+        height: 100px;
+
+        transition: color 1.5s;
     }
 
     .content {
