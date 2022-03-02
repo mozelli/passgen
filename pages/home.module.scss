@@ -1,0 +1,61 @@
+.container {
+    padding: 2rem 1rem;
+    color: var(--dark);
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .label {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .sizer {
+            display: flex;
+            align-items: center;
+
+            button {
+                background-color: var(--white);
+                border: 0;
+            }
+
+            input {
+                border: 0;
+                width: 3.5rem;
+                font-size: 2rem;
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .displayPassword {
+        margin-top: 2rem;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        text-align: center;
+        font-weight: 700;
+        background-color: var(--bege);
+    }
+
+    .copyButton {
+        
+        button {
+            background-color: var(--gray);
+            border: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            color: var(--bege);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+    }
+}
