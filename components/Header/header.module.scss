@@ -1,18 +1,58 @@
 .container {
-    background-color: var(--purple);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;
+    background-color: var(--dark);
+    color: var(--bege);
 
-    svg {
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        .image {
 
-    }
+            a {
+                height: 42px;
+                width: 42px;
 
-    .brand {
-        padding: 2rem 2rem;
-        font-size: 2.5rem;
-        color: var(--white);
-        font-weight: 700;
+                img {
+                    width: 42px;
+                }
+            }
+        }
+    
+        .brand {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    
+        .subtitle {
+            color: var(--white);
+        }
+    }  
+}
+
+@media (max-width: 768px) {
+    .container {
+        .content {
+            .subtitle {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
+@media (max-width: 576px) {
+    .container {
+        .content {
+            justify-content: center;
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+}
