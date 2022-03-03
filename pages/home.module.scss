@@ -12,11 +12,15 @@ main.container {
 
     .scale {
         margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .sizer {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 0 40px;
 
         img {
