@@ -3,8 +3,8 @@
     color: var(--dark);
 
     .smallText {
+        max-width: 768px;
         padding: 1rem 0;
-        font-size: 1.2rem;
         text-align: center;
         color: var(--red);
         height: 100px;
@@ -13,8 +13,8 @@
     }
 
     .smallTextSuccessMessage {
+        max-width: 768px;
         padding: 1rem 0;
-        font-size: 2rem;
         font-weight: 700;
         text-align: center;
         color:forestgreen;
@@ -24,6 +24,7 @@
     }
 
     .content {
+        max-width: 768px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -34,6 +35,7 @@
         }
 
         .sizer {
+            max-width: 768px;
             display: flex;
             align-items: center;
 
@@ -45,6 +47,7 @@
             }
 
             input {
+                max-width: 768px;
                 border: 0;
                 width: 3.5rem;
                 font-size: 2rem;
@@ -79,6 +82,46 @@
             color: var(--bege);
             font-weight: 700;
             font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+    
+        .smallText {
+            font-size: 1.2rem;
+        }
+    
+        .smallTextSuccessMessage {
+            font-size: 2rem;
+        }
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .container {
+    
+        .smallText {
+            font-size: 1.5rem;
+        }
+    
+        .smallTextSuccessMessage {
+            font-size: 2rem;
+        }
+    }
+}   
+
+@media (max-width: 1200px) {
+    .container {
+    
+        .smallText {
+            font-size: 1.5rem;
+        }
+    
+        .smallTextSuccessMessage {
+            font-size: 2rem;
         }
     }
 }
