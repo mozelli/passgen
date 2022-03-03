@@ -15,10 +15,11 @@
 
 html {
     font-family: "Nunito", sans-serif;
+    font-size: 62.5%; // a cara 1 rem será considerado 10px
 }
 
 body, input, textarea, button, select {
-    font: 400 1rem "Nunito", sans-serif;
+    font: 400 1.6rem "Nunito", sans-serif;
 }
 
 button {

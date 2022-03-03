@@ -3,26 +3,49 @@ import styles from './header.module.scss';
 
 export default function Header() {
     return (
-        <div className={ styles.container }>
+        <header className={ styles.container }>
             <div className={ styles.content }>
-                <div className={ styles.image }>
-                    <Link href={"/"}>
-                        <a>
-                            <img src="./key-3.svg" alt="Logo" />    
-                        </a>
-                    </Link>
-                </div>
+                <Link href={"/"}>
+                <a>
                 <div className={ styles.brand }>
-                    <Link href={"/"}>
-                        <a>
-                            PassGen 
-                        </a>
-                    </Link>
+                    <div className={ styles.logo }>
+                        <img src="./key-3.svg" alt="Logo" />
+                        <h1>PassGen</h1>
+                    </div>
                 </div>
+                </a>
+                </Link>
                 <div className={ styles.subtitle }>
-                    Gerador de Senhas Online!
+                    Gerador de Senhas
                 </div>
             </div>
-        </div>
+        </header>
+        
     )
 }
+
+// <div className={ styles.container }>
+
+        //     <div className={ styles.logo }>
+        //         <div className={ styles.image }>
+        //             <Link href={"/"}>
+        //                 <a>
+        //                     <img src="./key-3.svg" alt="Logo" />    
+        //                 </a>
+        //             </Link>
+        //         </div>
+                
+        //         <div className={ styles.brand }>
+        //             <Link href={"/"}>
+        //                 <a>
+        //                     PassGen 
+        //                 </a>
+        //             </Link>
+        //         </div>
+        //     </div>
+                
+        //     <div className={ styles.subtitle }>
+        //         Gerador de Senhas Online!
+        //     </div>
+            
+        // </div>
