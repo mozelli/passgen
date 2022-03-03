@@ -73,4 +73,29 @@ main.container {
         margin-top: 10px;
         color: var(--white);
     }
+
+    .verify {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        
+        .waiting {
+            width: 9rem;
+            height: 9rem;
+            opacity: 0;
+
+            transition: all 2s;
+        }
+
+        .verify {
+            width: 9rem;
+            height: 9rem;
+            opacity: 50;
+
+            transition: all 1.5s;
+        }
+
+    }
 }

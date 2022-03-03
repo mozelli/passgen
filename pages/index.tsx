@@ -6,8 +6,7 @@ import styles from './home.module.scss'
 export default function Home() {
   const [size, setSize] = useState<any>(4);
   const [password, setPassword] = useState("");
-  // const [message, setMessage] = useState("Informe abaixo o número de caracteres da senha");
-  // const [messageStyle, setMessageStyle] = useState(styles.smallText);
+  const [verify, setVerify] = useState(styles.waiting);
 
   useEffect(() => {
     setSize(size);
@@ -43,9 +42,13 @@ export default function Home() {
 
   function copyToClipboard() {
     navigator.clipboard.writeText(password).then(() => {
-      //setMessage("Senha copiada!");
-      //setMessageStyle(styles.smallTextSuccessMessage);
+      setVerify(styles.verify)
+      setTimeout(changeStyle,3000);
     });
+  }
+
+  function changeStyle() {
+    setVerify(styles.waiting);
   }
 
   return (
@@ -71,6 +74,9 @@ export default function Home() {
       <div className={ styles.copyButton } onClick={ copyToClipboard }>
         Copiar
         <img src="./copy-1.svg" alt="Copiar" />
+      </div>
+      <div className={ styles.verify }>
+        <img src="./check-mark-5.svg" alt="Senha copiada com sucesso!" className={ verify } />
       </div>
     </main>
   )
