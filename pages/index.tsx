@@ -53,7 +53,7 @@ export default function Home() {
 
   return (
     <main className={ styles.container }>
-      <SEO title='PassGen' description='Gerador de password online. Gerador de senha online.' image='key-image.png' />
+      <SEO title='PassGen' description='Gerador de password online. Gerador de senha online.' image='passgen-facebook.png' />
       <div className={ styles.text1 }>
         Informe o tamanho da senha:
       </div>
@@ -61,9 +61,13 @@ export default function Home() {
         <img src="./scale.svg" alt="Régua" />
       </div>
       <div className={ styles.sizer }>
-        <img src="./down-thin.svg" alt="Seta para baixo" onClick={ minus } />
+        <button type='button' onClick={ minus }>
+          <img src="./down-thin.svg" alt="Seta para baixo" />
+        </button>
         <input type="number" disabled value={ size } onChange={ (event) => setSize(event.target.value) } />
-        <img src="./up-thin.svg" alt="Seta para cima" onClick={ plus } />
+        <button type='button' onClick={ plus }>
+          <img src="./up-thin.svg" alt="Seta para cima" />
+        </button>
       </div>
       <div className={ styles.text2 }>
         caracteres
