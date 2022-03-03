@@ -1,127 +1,76 @@
-.container {
-    padding: 1rem;
-    color: var(--dark);
+main.container {
+    width: 100%;
+    margin: 20px 0;
 
-    .smallText {
-        max-width: 768px;
-        padding: 1rem 0;
+    .text1 {
+        font-size: 2.5rem;
+        color: var(--dark);
         text-align: center;
-        color: var(--red);
-        height: 100px;
-
-        transition: color 1.5s;
-    }
-
-    .smallTextSuccessMessage {
-        max-width: 768px;
-        padding: 1rem 0;
         font-weight: 700;
-        text-align: center;
-        color:forestgreen;
-        height: 100px;
-
-        transition: color 1.5s;
+        margin: 0 40px;
     }
 
-    .content {
-        max-width: 768px;
+    .scale {
+        margin: 20px 0;
+    }
+
+    .sizer {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        margin: 0 40px;
 
-        .label {
-            font-size: 2rem;
-            font-weight: 700;
+        img {
+            width: 50px;
+            height: 50px;
         }
 
-        .sizer {
-            max-width: 768px;
-            display: flex;
-            align-items: center;
+        &:hover {
+            cursor: pointer;
+        }
 
-            button {
-                display: flex;
-                align-items: center;
-                background-color: var(--white);
-                border: 0;
-            }
-
-            input {
-                max-width: 768px;
-                border: 0;
-                width: 3.5rem;
-                font-size: 2rem;
-                text-align: center;
-                font-weight: 700;
-            }
+        input {
+            width: 14.2rem;
+            border: 0;
+            background-color: var(--white);
+            height: auto;
+            font-size: 4rem;
+            font-weight: 700;
+            text-align: center;
+            color: var(--brown);
         }
     }
 
-    .displayPassword {
-        margin-top: 2rem;
-        padding: 1rem 0;
-        font-size: 1.5rem;
-        letter-spacing: 3px;
-        text-align: center;
+    .text2 {
+        font-size: 2.5rem;
         font-weight: 700;
+        color: var(--brown);
+        text-align: center;
+    }
+
+    .password {
         background-color: var(--bege);
+        width: 100%;
+        height: 40px;
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 5px;
     }
 
     .copyButton {
-        
-        button {
-            background-color: var(--gray);
-            border: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
-            padding: 1rem;
-            color: var(--bege);
-            font-weight: 700;
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-    
-        .smallText {
-            font-size: 1.2rem;
-        }
-    
-        .smallTextSuccessMessage {
-            font-size: 2rem;
-        }
-    }
-   
-}
-
-@media (max-width: 768px) {
-    .container {
-    
-        .smallText {
-            font-size: 1.5rem;
-        }
-    
-        .smallTextSuccessMessage {
-            font-size: 2rem;
-        }
-    }
-}   
-
-@media (max-width: 1200px) {
-    .container {
-    
-        .smallText {
-            font-size: 1.5rem;
-        }
-    
-        .smallTextSuccessMessage {
-            font-size: 2rem;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        height: 40px;
+        font-size: 2.2rem;
+        font-weight: 700;
+        cursor: pointer;
+        background-color: var(--gray);
+        margin-top: 10px;
+        color: var(--white);
     }
 }
